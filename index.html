@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Red Hot Chili Peppers</title>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded:700" rel="stylesheet">
+    <link href="taki.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="Shortcut icon" href="logo.svg">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        <!-- dzwięki -->
+        function sound(){
+        var sound = new Audio("Hejoo.mp3");
+        sound.play();
+        }
+        function red2(){
+        var sound = new Audio("Red2.mp3");
+        sound.play();
+        }
+        function red3(){
+        var sound = new Audio("Red3.mp3");
+        sound.play();
+        }
+        function red4(){
+        var sound = new Audio("Red4.mp3");
+        sound.play();
+        }
+        function red5(){
+        var sound = new Audio("Red5.mp3");
+        sound.play();
+        }
+        function red6(){
+        var sound = new Audio("Red6.mp3");
+        sound.play();
+        }
+        function powrot(){
+        var sound = new Audio("powrot.mp3");
+        sound.play();
+        }
+        function muzyka(){
+        var sound = new Audio("muzyka.mp3");
+        sound.play();
+        }
+        function pomoc(){
+        var sound = new Audio("pomoc.mp3");
+        sound.play();
+        }
+        
+
+        
+        jQuery(document).ready(function($) {
+  $('.content > .slide_down').hide();
+  $('.content > .action').click(function() {
+  	var $action = $(this);
+    var $content = $action.next('.slide_down');
+  	$('.content > .slide_down').not($content).slideUp();
+    $content.slideDown();
+    $(this).toggleClass('active');
+  }).eq(0).click();
+});
+
+
+    </script>
+
+</head>
+
+<body>
+    <!-- site navbar -->
+    <div class="navbar">
+        <a href="#video" class="active" onmouseover="this.querySelector('img').src = 'film_kolor.svg'" onmouseout="this.querySelector('img').src = 'film.svg'" onclick="red2()"><img src="film.svg" alt="logo" height="100%"> REALITY SHOW</a>
+        <a href="#albumy" onmouseover="this.querySelector('img').src = 'album_kolor.svg'" onmouseout="this.querySelector('img').src = 'album.svg'" onclick="red3()"><img src="album.svg" alt="album" height="100%"> ALBUMY</a>
+        <a href="#osoby" onmouseover="this.querySelector('img').src = 'ludzik_kolor.svg'" onmouseout="this.querySelector('img').src = 'ludzik.svg'" onclick="red4()"><img src="ludzik.svg" alt="ludzik" height="100%"> CZŁONKOWIE</a>
+        <a href="#nagrody" onmouseover="this.querySelector('img').src = 'puchar_kolor.svg'" onmouseout="this.querySelector('img').src = 'puchar.svg'" onclick="red5()"><img src="puchar.svg" alt="puchar" height="100%"> NAGRODY</a>
+        <a href="#kontakt" onmouseover="this.querySelector('img').src = 'telefon_kolor.svg'" onmouseout="this.querySelector('img').src = 'telefon.svg'" onclick="red6()"><img src="telefon.svg" alt="telefon" height="100%"> KONTAKT</a>
+    </div>
+
+
+    <!-- site logo -->
+    <div class="pasek1">
+        <table id="gora" style="width:100%; height: 10%;">
+            <tr>
+                <td><img height="100%" src="logo.svg" onclick="sound()" /></td>
+                <td>
+                    <marquee direction="left" scrollamount="5" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">FANPAGE RED HOT CHILI PEPPERS </marquee>
+                </td>
+                <td><img height="100%" src="logo.svg" onclick="sound()" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- VIDEO-->
+    <div class="dywan">
+        <div id="video">
+            <video controls>
+                <source src="House_of_Stars.mp4" type="video/mp4">
+            </video>
+            <p>W tym odcinku waszego ulubionego reality show mowa o wspaniałym zespole, którym jest oczywiście Red Hot Chili Peppers! Koniecznie zobaczcie co wydarzyło się pod garderobą zespołu :O</p>
+        </div>
+    </div>
+
+    <!-- asystent, powrot -->
+    <div class="back">
+        <div class="pytanie" onclick="pomoc()">
+            <p><br>W czym<br> mogę pomóc?<br></p>
+        </div>
+        <img src="asystent.jpg" alt="asystent" style="height: 60%;">
+        <div class="opcja"><a href="#gora" onclick="powrot()">Powrót ^</a></div>
+        <div class="opcja"><a onclick="muzyka()" href="https://open.spotify.com/playlist/37i9dQZF1DXbuvTm9NMIGt">Muzyczka</a></div>
+    </div>
+
+    <!-- ALBUMY -->
+    <div id="albumy">
+        <div class="pasek">
+            <h1>Albumy:</h1>
+        </div>
+        <div class="dywan">
+            <div class="zdj" style="width: 100%; font-size: 100%;">
+                <a href="https://open.spotify.com/album/5QxFTj8ar3blXVyVEo2rxD"><img src="the-red.jpg"></a>
+                <a href="https://open.spotify.com/album/10Oqhoq2akSJnurJOPk8xT"><img src="freaky-styley.jpg"></a>
+                <a href="https://open.spotify.com/album/3rHJQrfEcBeSaLPuLwKR6F"><img src="mofoparty.jpg"></a>
+                <a href="https://open.spotify.com/album/1oOkcBu5bgkUzZTvKD1m8z"><img src="mother-s-milk.jpg"></a>
+                <a href="https://open.spotify.com/album/30Perjew8HyGkdSmqguYyg"><img src="bloodsugar.jpg"></a>
+                <a href="https://open.spotify.com/album/2rQ135imvelvp89D8eEZOi"><img src="one-hot-minute.jpg"></a>
+                <a href="https://open.spotify.com/album/2Y9IRtehByVkegoD7TcLfi"><img src="californication.jpg"></a>
+                <a href="https://open.spotify.com/album/6deiaArbeoqp1xPEGdEKp1"><img src="bytheway.jpg"></a>
+                <a href="https://open.spotify.com/album/7xl50xr9NDkd3i2kBbzsNZ"><img src="STADIUM-ARCADIUM.jpg"></a>
+                <a href="https://open.spotify.com/album/5wZtSIvijWCMc1vlPFqAyB"><img src="imwithyou.jpg"></a>
+                <a href="https://open.spotify.com/album/43otFXrY0bgaq5fB3GrZj6"><img src="the-getaway.jpg"></a>
+                <div style="width: 31%; float: right; padding: 5px;">
+                    <p>Najpopularniejsze na Spotify:</p>
+                    <p>1. Snow</p><audio controls="">
+                        <source src="Snow.mp3" type="audio/ogg">
+                    </audio>
+                    <p>2. Californication</p><audio controls="">
+                        <source src="Californication.mp3" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- OSOBY -->
+    <div id="osoby">
+        <div class="pasek">
+            <h1>Członkowie zespołu:</h1>
+        </div>
+        <div class="dywan">
+            <div style="width: 100%;">
+                <img src="thony.jpg" style="width:24%;" />
+                <img src="flea.jpg" style="width:24%;height:75%;" />
+                <img src="john.jpg" style="width:24%;height:75%;" />
+                <img src="chad.jpg" style="width:24%;height:75%;" />
+
+            </div>
+            <div class="opis" style="margin-bottom: 150px;">
+                <div class="content">
+                    <div class="action">Anthony Kiedis</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>wokal (1983–)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">"Flea" Balzary</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>gitara basowa, trąbka, pianino (1983–)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">John Frusciante</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>gitara, chórki (1988-1992; 1998-2009; 2019-)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">Chad Smith</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>perkusja (1989–)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="red-hot-chili-peppers-flea.jpg" style="width:100%;height:60%;" />
+        </div>
+    </div>
+
+    <!-- NAGRODY -->
+    <div id="nagrody">
+        <div class="pasek">
+            <h1>Nagrody:</h1>
+        </div>
+        <div class="dywan">
+            <img src="awards.jpg" style="width:100%;height:60%;" />
+            <div class="opis" style="margin-bottom: 180px;">
+                <div class="content">
+                    <div class="action">1993</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>Nagroda Grammy w kategorii Best Hard Rock Performance – „Give It Away”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">2006</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>Nagroda Grammy w kategorii Best Rock Album – „Stadium Arcadium”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">2006</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>Nagroda Grammy w kategorii Best Rock Performance By A Duo Or Group With Vocal – „Dani California”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="action">2007</div>
+                    <div class="slide_down">
+                        <div class="side">
+                            <p>Nagroda Grammy: Najlepszy album - rock</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pasek">
+        <div id="kontakt">
+            <a href="https://pl-pl.facebook.com/ChiliPeppers/"><img src="facebook.svg" style="float: left; width: 50px; height: 50px; padding: 15px;"></a>
+            <a href="https://twitter.com/chilipeppers"><img src="twitter.svg" style="float: left; width: 50px; height: 50px; padding: 15px;"></a>
+            <a href="https://www.youtube.com/channel/UCEuOwB9vSL1oPKGNdONB4ig"><img src="youtube.svg" style="float: left; width: 50px; height: 50px; padding: 15px;"></a>
+        </div>
+        <div style="float: right; width: 80%; line-height: 100px;">
+            <p style="font-size: 40%;">&copy; Strona wykonana w ramach projektu szkolnego. Wykonana przez Klaudię Merchut i Marlenę Płotka.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
